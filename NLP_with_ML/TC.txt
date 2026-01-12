@@ -1,0 +1,21 @@
+Text Classification - is supervised learning NLP example. 
+
+The input is vectorized text data.
+
+Since the input is numeric we can use any classification algorithms on vectorized text data, such as:
+KNN, Logistic Regression, Decision Trees, Random Forests, Gradient Boosted Trees, etc.
+One more speficic algorithm that works well on text data is Naive Bayes.
+
+Altough there is no strict rules when it comes to choosing algorithms, it is recommended to follow the general rule below:
+
+- For small data sets (<10k rows), start with Naive Bayes and other simple models like Logistic Regression, KNN, etc.
+- For medium data sets (<100k rows), start with Logistic Regression and other classification techniques like Decision Trees, Random Forests, Gradient Bootsed Trees, etc.
+- For large data sets (>1M rows), start with Gradient Boosted Trees and potentially move on to modern NLP techniques with LLMs.
+
+
+
+There are a few ways to improve text classification model by tuning any part of the NLP pipeline:
+- Text preprocessing: update any cleaning or normalization steps
+- Vectorization: Fine tune the CountVectorizer parameters (stop_words, ngram_range, min_df, etc.)
+- Feature engineering: include non-term values such as text length, sentiment score, time of day sent etc.
+- Modeling: try a different probability cutoff point instead of the default 50% probability or try a different classification model(LR, Gradient Boosted Trees, etc.)

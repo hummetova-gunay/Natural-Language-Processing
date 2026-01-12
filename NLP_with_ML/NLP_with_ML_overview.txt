@@ -1,0 +1,19 @@
+Common NLP tasks are often solved using traditional NLP methods such as simple 
+rules-based techniques or more advanced ML algorithms
+
+Commmon NLP tasks include Sentiment Analysis, Text Classification, Topic Modelling
+
+
+SA - techniques used to solve this task are Rules-based, the library is VADER and the input is raw Text
+
+TC - Supervised learning (i.e., Naive Bayes), library is scikit-learn, input format CV / TF-IDF
+
+TM - Unsupervised Learning (i.e., NMF) library is scikit-learn, input format CV / TF-IDF
+
+
+
+Traditional vs Modern NLP
+
+Traditional techniques include ML algorithms, Modern techniques include Deep Learning techniques.
+If the goal is one of SA, TC, or TM and the data is relatively small (<100k rows) then we can use tradittional techniques, if we have big data (>1M rows) then we may consider modern techniques
+If the goal is little complex such as Text Generation, Machine Translation, Question Answering which can not be done with traditional techniques then we should opt for modern techniques.

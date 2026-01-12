@@ -1,0 +1,14 @@
+Topic Modeling: used to find themes in unlabeled text documents
+The input is vectorized text data 
+For small datasets (<10k rows), start with Non-Negative Matrix Factorization (NMF) (sklearn library)
+For medium datasets (<100k rows), start with Latent Dirichlet Allocation (includes randomness) (genism library)
+For large datasets (>1M rows), use modern embedding- based NLP approaches such as BERTopic and Top2Vec
+
+NMF -  falls under the general machine learning idea of dimensionality reduction
+
+IN the table of data columns are sometimes called features or dimensions, when we have a lot of them we are going to reduce them into fewer columns
+
+Non-Negative Matrix Factorization (NMF) is a topic modeling technique that decomposes the document - term matrix (V) into two other matrices:
+
+- A document- topic matrix (W) that shows how much each topic appears in each document (the topic distribution)
+- A topic - term matrix (H) that shows how important each word is to each topic (helps us understand the terms that make up each topic)
